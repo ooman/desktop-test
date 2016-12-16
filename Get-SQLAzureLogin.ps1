@@ -40,7 +40,7 @@ Get-AzureRmSubscription -TenantId $tenantID |
                             add-member -in $_ -membertype noteproperty  -Name  "Total" -Value $gcnt
                             add-member -in $_ -membertype noteproperty  -Name  "Item" -Value $cnt -PassThru
 
-                        # | Where-Object { ($_.Login -eq $LoginName)  -or ($LoginName -eq $null) } 
+                         | Where-Object { ($_.Login -eq $LoginName)  -or ($LoginName -eq $null) } 
                         }
                  } | 
                     Format-Table Total, InstanceName, Item, Login -AutoSize
