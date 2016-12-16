@@ -4,7 +4,7 @@ $currentDir = [System.IO.Directory]::GetCurrentDirectory()
 . "$currentDir\Get-Login.ps1"
 
 $IsDisabled = $null #$false
-$LoginName =  $null # "APugliese"
+$LoginName =  $null 
 
 
 
